@@ -1,0 +1,18 @@
+<div class="overlay" [class.showOverlay]="isLoading">
+  <div class="loader"></div>
+  <p class="loading-text">Abrindo seus boosters.</p>
+  <p class="loading-text">Aguarde...</p>
+</div>
+
+<div class="content">
+
+  @for (card of listCards; track card.name) {
+    <app-card
+      [data]="card"
+    >
+    </app-card>
+  } 
+  
+</div>
+
+<p-toast></p-toast>

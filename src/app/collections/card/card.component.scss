@@ -1,0 +1,64 @@
+.card {
+  grid-column: span 1;
+  grid-row: span 1;
+  min-height: 250px;
+  min-width: 250px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 2;
+  padding: 20px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.text {
+  font-size: 12px;
+  color: #333;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.symbol {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: grey;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}

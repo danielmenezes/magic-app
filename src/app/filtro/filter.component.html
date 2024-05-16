@@ -1,0 +1,36 @@
+<form [formGroup]="form" class="filter">
+  <p-floatLabel>
+    <input 
+      pInputText 
+      id="Nome"
+      formControlName="name" 
+    />
+    <label for="nome"> Nome </label>
+  </p-floatLabel>
+
+  <p-floatLabel [ngClass]="{ 'invalidField': form.invalid && form.controls['block'].errors && showErros }">
+    <p-multiSelect       
+      [options]="blockList" 
+      formControlName="block" 
+      filter="false"
+      showToggleAll="false"
+      showClear="true"
+      showHeader="false"
+    />
+    <label for="bloco"> Bloco </label>
+  </p-floatLabel>
+
+  <p-button label="Buscar" (click)="search()" />
+</form>
+
+<div class="content-filter" >
+    @for (component of resultComponent; track component.code) {
+      <app-card
+        [data]="component"
+        (onClick)="navigateColection($event)"
+      >
+      </app-card>
+    } @empty {
+      Sem dados a exibir.
+    }
+</div>

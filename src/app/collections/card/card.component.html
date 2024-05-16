@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="symbol"> {{ data.colorIdentity?.length && data.colorIdentity[0] }} </div>
+  <div class="image-container">
+    <img src="{{ data?.imageUrl }}" alt="Imagem">
+  </div>
+  <div class="content">
+    <h2 class="title"> {{ data?.name }} </h2>
+    <h3 class="subtitle"> {{ data?.manaCost }} </h3>
+    <p class="text"> {{ data?.text }} </p>
+  </div>
+</div>
