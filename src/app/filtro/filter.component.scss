@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: rgb(228, 228, 228);
 }
 
 .content-filter {
@@ -18,12 +19,16 @@
   gap: 10px;
 }
 
-.card {
-  
+@media screen and (max-width: 1500px) {
+  .content-filter {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.card .date {
-  text-align: end;
+@media screen and (max-width: 1300px) {
+  .content-filter {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .invalidField {

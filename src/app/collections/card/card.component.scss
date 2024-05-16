@@ -12,6 +12,7 @@
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  background-color: #333;
 }
 
 .image-container {
@@ -31,17 +32,18 @@
 .title {
   font-size: 18px;
   margin: 0 0 10px;
+  color: white;
 }
 
 .subtitle {
   font-size: 16px;
-  color: #666;
+  color: white;
   margin: 0 0 10px;
 }
 
 .text {
   font-size: 12px;
-  color: #333;
+  color: white;
   line-height: 1.5;
   overflow: hidden;
   text-overflow: ellipsis;
